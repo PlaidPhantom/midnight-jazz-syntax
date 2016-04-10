@@ -98,9 +98,12 @@
 
 .meta.brace,
 .bracket.round,
-.punctuation.definition.begin:not(.string),
-.punctuation.definition.end:not(.string) {
+.punctuation.definition {
     color: @orange;
+
+    &.string {
+        color: @cyan;
+    }
 }
 
 .makefile.name.function {

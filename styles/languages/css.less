@@ -7,7 +7,7 @@
     }
     &.property-list.begin,
     &.property-list.end {
-      color: @red;
+      color: @orange;
     }
     &.section.function {
       color: @cyan;
@@ -49,6 +49,15 @@
     color: @red;
   }
 
+  .property-name {
+      color: @yellow;
+  }
+
+  .attribute-selector {
+    .punctuation, .attribute-name {
+      color: @violet;
+    }
+  }
 }
 
 
@@ -59,5 +68,14 @@
 .source.scss {
   .keyword.unit {
     color: @cyan;
+  }
+  .entity {
+      color: @green;
+  }
+}
+
+.source.stylus {
+  .selector {
+    color: @green;
   }
 }

@@ -4,6 +4,6 @@ I love [Lunarized](https://github.com/aclissold/lunarized-syntax), but I wanted 
 
 ## Samples
 
-[[https://github.com/PlaidPhantom/midnight-jazz-syntax/raw/master/samples/html.png|HTML sample]]
-[[https://github.com/PlaidPhantom/midnight-jazz-syntax/raw/master/samples/css.png|CSS sample]]
-[[https://github.com/PlaidPhantom/midnight-jazz-syntax/raw/master/samples/pyhon.png|Python sample]]
+![HTML sample](https://github.com/PlaidPhantom/midnight-jazz-syntax/raw/master/samples/html.png)
+![CSS sample](https://github.com/PlaidPhantom/midnight-jazz-syntax/raw/master/samples/css.png)
+![Python sample](https://github.com/PlaidPhantom/midnight-jazz-syntax/raw/master/samples/python.png)

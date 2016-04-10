@@ -1,9 +1,9 @@
 {
-  "name": "solarized-dark-syntax",
+  "name": "midnight-rain-syntax",
   "theme": "syntax",
-  "version": "1.0.2",
-  "description": "A dark syntax theme using the solarized colors",
-  "repository": "https://github.com/atom/solarized-dark-syntax",
+  "version": "1.0.0",
+  "description": "Late night at party's end, when the cats put on the cool jazz.",
+  "repository": "https://github.com/plaidphantom/midnight-rain-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

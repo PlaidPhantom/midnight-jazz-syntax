@@ -1,9 +1,9 @@
 {
-  "name": "midnight-rain-syntax",
+  "name": "midnight-jazz-syntax",
   "theme": "syntax",
   "version": "1.0.0",
-  "description": "Late night at party's end, when the cats put on the cool jazz.",
-  "repository": "https://github.com/plaidphantom/midnight-rain-syntax",
+  "description": "A Lunarized-inspired, slightly jazzed-up theme for those dark nights.",
+  "repository": "https://github.com/plaidphantom/midnight-jazz-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

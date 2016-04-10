@@ -1,4 +1,3 @@
-# Midnight Rain Syntax theme
+# Midnight Jazz syntax theme
 
-Based on Solarized Dark with changes from Lunarized, this is my custom permutation
-of having the Solarized style without the super-blue backgrounds.
+I love [Lunarized](https://github.com/aclissold/lunarized-syntax), but I wanted a little more pop in it's colors, so I decided to take its ideas and throw in a little extra kick while I was at it.  Start with [Solarized After Dark](https://github.com/atom/solarized-dark-syntax),  turn down the lights, and let the [music](http://somafm.com/) wash over you.

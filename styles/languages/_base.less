@@ -15,7 +15,7 @@
 
 .constant {
   &.numeric {
-    color: @magenta;
+    color: @yellow;
   }
   &.language {
     color: @yellow;
@@ -32,6 +32,10 @@
 
 .keyword {
   color: @green;
+}
+
+.operator, .operator.keyword {
+  color: @magenta;
 }
 
 .storage {
@@ -90,4 +94,9 @@
 
 .none {
   color: @syntax-text-color;
+}
+
+.meta.brace,
+.bracket.round {
+    color: @orange;
 }

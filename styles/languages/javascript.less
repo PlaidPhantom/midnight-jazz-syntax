@@ -1,7 +1,4 @@
 .source.js {
-  .constant {
-    color: @green;
-  }
 
   .comma {
     color: @syntax-text-color;
@@ -18,11 +15,7 @@
     color: @syntax-text-color;
   }
 
-  .meta.brace {
-    color: @syntax-text-color;
-  }
-
-  .keyword {
+  .keyword:not(.operator) {
     color: @syntax-text-color;
   }
   .keyword.operator.new {
@@ -53,10 +46,6 @@
     color: @syntax-text-color;
   }
 
-  .constant.numeric {
-    color: @syntax-text-color;
-  }
-
   .punctuation.terminator.statement {
     color: @syntax-text-color;
   }
@@ -64,18 +53,18 @@
   .meta.delimiter.method.period {
     color: @syntax-text-color;
   }
-  .meta.brace.square {
-    color: @blue;
-  }
-  .meta.brace.curly {
-    color: @blue;
-  }
   .string.quoted.template {
     .embedded.source {
       color: @syntax-text-color;
       & > .embedded.punctuation {
         color: @red;
       }
+    }
+  }
+
+  .definition.parameters {
+    &.begin, &.end {
+        color: @orange;
     }
   }
 }

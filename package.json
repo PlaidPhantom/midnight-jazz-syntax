@@ -6,6 +6,6 @@
   "repository": "https://github.com/plaidphantom/midnight-jazz-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">1.13.0"
+    "atom": ">=1.13.0"
   }
 }

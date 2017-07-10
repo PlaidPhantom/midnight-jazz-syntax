@@ -1,63 +1,110 @@
-.syntax--source.syntax--css {
-
-  .syntax--punctuation {
-    &.syntax--separator,
-    &.syntax--terminator {
-      color: @syntax-text-color;
+.syntax--css
+{
+    .syntax--punctuation
+    {
+        &.syntax--separator,
+        &.syntax--terminator
+        {
+            color: @orange;
+        }
+        &.syntax--property-list,
+        &.syntax--media
+        {
+            &.syntax--begin,
+            &.syntax--end
+            {
+                color: @orange;
+            }
+        }
+        &.syntax--section.syntax--function
+        {
+            color: @cyan;
+        }
     }
-    &.syntax--property-list.syntax--begin,
-    &.syntax--property-list.syntax--end {
-      color: @orange;
-    }
-    &.syntax--section.syntax--function {
-      color: @cyan;
-    }
-  }
 
-  .syntax--entity.syntax--name.syntax--css {
-    color: @green;
-  }
-  .syntax--attribute-name.syntax--class,
-  .syntax--id {
-    color: @blue;
-  }
-  .syntax--pseudo-element,
-  .syntax--pseudo-class {
-    color: @orange;
-  }
+    // selectors
 
-  .syntax--property-value {
-    color: @cyan;
-  }
-  .syntax--constant.syntax--numeric {
-    color: @cyan;
-    .syntax--unit {
-      color: @cyan;
+    .syntax--entity
+    {
+        &.syntax--name
+        {
+            color: @green;
+        }
+        &.syntax--class
+        {
+            color: @blue;
+            .syntax--punctuation
+            {
+                color: inherit;
+            }
+        }
+        &.syntax--id
+        {
+            color: @magenta;
+            .syntax--punctuation
+            {
+                color: inherit;
+            }
+        }
+        &.syntax--pseudo-element,
+        &.syntax--pseudo-class
+        {
+            color: @yellow;
+        }
     }
-  }
-  .syntax--rgb-value {
-    color: @cyan;
-  }
-  .syntax--support.syntax--constant {
-    color: @cyan;
-    &.syntax--media {
-      color: @red;
+    .syntax--attribute-selector
+    {
+        .syntax--punctuation,
+        .syntax--attribute-name
+        {
+            color: @violet;
+        }
     }
-  }
 
-  .syntax--keyword.syntax--important {
-    color: @red;
-  }
-
-  .syntax--property-name {
-      color: @yellow;
-  }
-
-  .syntax--attribute-selector {
-    .syntax--punctuation, .syntax--attribute-name {
-      color: @violet;
+    .syntax--at-rule
+    {
+        color: @magenta;
+        .syntax--punctuation.syntax--definition
+        {
+            color: inherit;
+        }
     }
-  }
+
+    .syntax--keyword.syntax--important
+    {
+        color: @red;
+    }
+
+    // properties
+
+    .syntax--property-name
+    {
+        color: @yellow;
+    }
+    .syntax--property-value
+    {
+        color: @cyan;
+    }
+    .syntax--constant.syntax--numeric
+    {
+        color: @cyan;
+        .syntax--unit
+        {
+            color: @cyan;
+        }
+    }
+    .syntax--rgb-value
+    {
+        color: @cyan;
+    }
+    .syntax--support.syntax--constant
+    {
+        color: @cyan;
+        &.syntax--media
+        {
+            color: @red;
+        }
+    }
 }
 
 
@@ -65,17 +112,10 @@
 // but for just a single override, here should be fine too
 
 .syntax--source.syntax--less,
-.syntax--source.syntax--scss {
-  .syntax--keyword.syntax--unit {
-    color: @cyan;
-  }
-  .syntax--entity {
-      color: @green;
-  }
-}
-
-.syntax--source.syntax--stylus {
-  .syntax--selector {
-    color: @green;
-  }
+.syntax--source.syntax--scss
+{
+    .syntax--keyword.syntax--unit
+    {
+        color: @cyan;
+    }
 }

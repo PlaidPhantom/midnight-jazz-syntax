@@ -1,8 +1,8 @@
 # Midnight Jazz syntax theme
 
-I love [Lunarized](https://github.com/aclissold/lunarized-syntax), but I wanted a little more pop in the highlighting, so I decided to take its ideas and throw in a little extra kick.  (For example, HTML and CSS their own distinct palettes.)  Start with [Solarized After Dark](https://github.com/atom/solarized-dark-syntax), turn down the lights, and let the [music](http://somafm.com/) wash over you.
+I love [Lunarized](https://github.com/aclissold/lunarized-syntax), but I wanted a little more pop in the highlighting, so I decided to throw in a little extra kick.  (For example, HTML and CSS have their own distinct palettes.)   [Watch the sunset](https://github.com/atom/solarized-dark-syntax), turn down the lights, and let the [music](http://somafm.com/) wash over you.
 
-So far I've focused on HTML, CSS, Python, and Javascript as those are the languages I primarily use in Atom; suggestions and contributions, particularly for other languages, are certainly welcome!
+So far I've mostly focused on HTML, CSS, Javascript as those are the languages I primarily use in Atom; suggestions and contributions, particularly for other languages, are very welcome!
 
 ## Samples
 

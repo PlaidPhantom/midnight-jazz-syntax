@@ -75,12 +75,15 @@
   }
 }
 
-.syntax--html.syntax--tag, .syntax--xml.syntax--tag {
-  &.syntax--entity.syntax--name {
+.syntax--html, .syntax--xml {
+  .syntax--tag.syntax--entity.syntax--name {
     color: @blue;
   }
-  &.syntax--punctuation.syntax--definition {
+  .syntax--punctuation.syntax--definition {
     color: @magenta;
+  }
+  .syntax--string {
+    color: @cyan;
   }
   .syntax--doctype {
       color: @yellow;

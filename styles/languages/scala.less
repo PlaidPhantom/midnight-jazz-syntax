@@ -1,14 +1,14 @@
 .syntax--source.syntax--scala {
   .syntax--variable {
-    color: @syntax-emphasized-color;
+    color: @syntax-text-color;
   }
 
   .syntax--declaration {
-    color: @syntax-emphasized-color;
+    color: @syntax-text-color;
     font-weight: bold;
   }
   .syntax--comparison {
-    color: @syntax-emphasized-color;
+    color: @syntax-text-color;
   }
   .syntax--class, .syntax--type {
     color: @yellow;
@@ -24,11 +24,11 @@
     font-weight: normal;
   }
   .syntax--control.syntax--flow {
-    color: @syntax-emphasized-color;
+    color: @syntax-text-color;
     font-weight: bold;
   }
   .syntax--constant.syntax--language {
-    color: @syntax-emphasized-color;
+    color: @syntax-text-color;
     font-weight: bold;
   }
   .syntax--function.syntax--declaration {
@@ -38,7 +38,7 @@
     font-weight: bold;
   }
   .syntax--package {
-    color: @syntax-emphasized-color;
+    color: @syntax-text-color;
   }
   .syntax--variable.syntax--import {
     font-weight: normal;
@@ -59,7 +59,7 @@
         text-decoration: underline;
       }
       .syntax--class, .syntax--parameter {
-        color: @syntax-emphasized-color;
+        color: @syntax-text-color;
       }
       .syntax--description {
         color: @syntax-comment-color;
@@ -68,7 +68,7 @@
   }
 
   .syntax--embedded {
-    color: darken(@syntax-emphasized-color, 15%);
+    color: darken(@syntax-text-color, 15%);
 
     // so we dont confused it with normal expressions
     font-style: italic;

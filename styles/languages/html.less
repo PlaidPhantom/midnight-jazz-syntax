@@ -1,12 +1,21 @@
 .syntax--html, .syntax--xml {
-  .syntax--tag.syntax--entity.syntax--name {
+  .syntax--tag {
     color: @blue;
   }
+
+  .syntax--attribute-name {
+      color: @violet;
+  }
+
   .syntax--punctuation.syntax--definition {
     color: @magenta;
   }
   .syntax--string {
     color: @cyan;
+
+    &.syntax--punctuation {
+        color: inherit;
+    }
   }
   .syntax--doctype {
       color: @yellow;

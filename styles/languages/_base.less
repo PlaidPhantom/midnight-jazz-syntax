@@ -44,9 +44,8 @@
   color: @syntax-operator;
 }
 
-// type fixes JS let/var: move to js lang file if it causes problems
 .syntax--storage,
-.syntax--storage.syntax--type {
+.syntax--storage.syntax--type.syntax--local {
   color: @syntax-color-keyword;
 }
 
@@ -96,7 +95,17 @@
 .syntax--bracket.syntax--round,
 .syntax--punctuation.syntax--definition,
 .syntax--punctuation.syntax--curlybrace,
+.syntax--punctuation.syntax--bracket,
 .syntax--punctuation.syntax--parenthesis,
 .syntax--punctuation.syntax--scope {
     color: @syntax-bracket;
+}
+
+.syntax--terminator {
+    color: @syntax-comment-color;
+}
+
+.syntax--delimiter,
+.syntax--comma {
+    color: @syntax-text-color;
 }

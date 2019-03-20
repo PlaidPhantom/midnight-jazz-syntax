@@ -9,7 +9,9 @@ namespace HelloWorld
     {
         protected void Page_Load(object sender)
         {
-            CallFunc(123, 456);
+            if (a == true) {
+                CallFunc(123, 456);
+            }
             const int AAA = 0xF5;
             Label1.Text = "Hello World!";
             var a = 1234;

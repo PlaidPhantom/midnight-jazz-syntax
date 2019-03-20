@@ -16,7 +16,9 @@ public final class Default extends Object implements ISomethingable
         var a = 1234;
         String s = "asd\nf;oaweif" + 'a';
         MyObj o = new MyObj(1, "asdf");
-        var s = "asdfasdf{123}";
+        if (a == true) {
+            CallFunc(123, 456);
+        }
         var r = new Regex("\<[a-zA-Z]+\>");
     }
 }

@@ -4,7 +4,9 @@
  a long comment
 */
 function myFunction(param, param) {
-    param.doThing(true);
+    if (a === true) {
+        param.doThing(true);
+    }
     return 1234;
 }
 export class MyClass {

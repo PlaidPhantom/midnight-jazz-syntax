@@ -32,21 +32,28 @@
 @syntax-color-removed: @red;
 
 // For language entity colors
-@syntax-color-variable: @blue;
-@syntax-color-constant: @yellow;
-@syntax-color-property: @yellow;
-@syntax-color-value: @cyan;
-@syntax-color-function: @blue;
-@syntax-color-method: @blue;
-@syntax-color-class: @blue;
 @syntax-color-keyword: @green;
-@syntax-color-tag: @blue;
-@syntax-color-attribute: @syntax-comment-color;
-@syntax-color-import: @red;
+@syntax-color-import: @syntax-color-keyword;
 @syntax-color-snippet: @syntax-color-keyword;
+
+@syntax-color-variable: @syntax-text-color;
+
+@syntax-color-constant: @yellow;
+@syntax-color-value: @cyan;
+
+@syntax-color-class: @violet;
+@syntax-color-property: @blue;
+@syntax-color-attribute: @blue;
+
+@syntax-color-function: @blue;
+@syntax-color-method: @syntax-color-function;
+
+@syntax-color-tag: @blue;
 
 
 // Custom variables
 // Warning: Don't use in packages
 
 @syntax-comment-color: @grayscale_30;
+@syntax-operator: @magenta;
+@syntax-bracket: @orange;

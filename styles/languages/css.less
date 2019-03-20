@@ -1,60 +1,53 @@
-.syntax--css
+.syntax--css, .syntax--scss, .syntax--less, .syntax--stylus
 {
     .syntax--punctuation
     {
-        &.syntax--separator,
         &.syntax--terminator
         {
+            color: @syntax-text-color;
+        }
+        &.syntax--separator,
+        &.syntax--bracket,
+        &.syntax--function
+        {
             color: @orange;
-        }
-        &.syntax--property-list,
-        &.syntax--media
-        {
-            &.syntax--begin,
-            &.syntax--end
-            {
-                color: @orange;
-            }
-        }
-        &.syntax--section.syntax--function
-        {
-            color: @cyan;
         }
     }
 
     // selectors
 
-    .syntax--entity
+    .syntax--name
     {
-        &.syntax--name
+        color: @green;
+    }
+
+    .syntax--class
+    {
+        color: @blue;
+        & > .syntax--punctuation
         {
-            color: @green;
-        }
-        &.syntax--class
-        {
-            color: @blue;
-            & > .syntax--punctuation
-            {
-                color: inherit;
-            }
-        }
-        &.syntax--id
-        {
-            color: @magenta;
-            & > .syntax--punctuation
-            {
-                color: inherit;
-            }
-        }
-        &.syntax--pseudo-element,
-        &.syntax--pseudo-class
-        {
-            color: @yellow;
+            color: inherit;
         }
     }
+
+    .syntax--id
+    {
+        color: @green;
+        & > .syntax--punctuation
+        {
+            color: inherit;
+        }
+    }
+
+    .syntax--pseudo-element,
+    .syntax--pseudo-class
+    {
+        color: @yellow;
+    }
+
     .syntax--attribute-selector
     {
-        .syntax--punctuation,
+        & > .syntax--punctuation.syntax--definition,
         .syntax--attribute-name
         {
             color: @violet;
@@ -64,7 +57,8 @@
     .syntax--at-rule
     {
         color: @magenta;
-        & > .syntax--punctuation
+
+        & > .syntax--punctuation.syntax--keyword
         {
             color: inherit;
         }
@@ -102,7 +96,15 @@
         color: @cyan;
         &.syntax--media
         {
-            color: @red;
+            color: @yellow;
+        }
+    }
+
+    .syntax--variable {
+        color: @blue;
+
+        & > .syntax--punctuation {
+            color: @orange;
         }
     }
 }

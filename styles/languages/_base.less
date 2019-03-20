@@ -6,60 +6,64 @@
   .syntax--punctuation.syntax--definition {
     color: @syntax-comment-color;
   }
-  .syntax--todo {
+  .syntax--todo, .syntax--todo.syntax--storage {
     color: @magenta;
   }
 }
 
 .syntax--string {
-  &.syntax--quoted {
-    color: @cyan;
-  }
-  &.syntax--regexp {
-    color: @red;
+  color: @syntax-color-value;
+
+  &.syntax--punctuation.syntax--definition,
+  .syntax--punctuation.syntax--definition.syntax--char {
+      color: @syntax-color-value;
   }
 }
 
 .syntax--constant {
-  &.syntax--numeric {
-    color: @yellow;
+  &.syntax--numeric, &.syntax--language {
+    color: @syntax-color-constant;
   }
-  &.syntax--language {
-    color: @yellow;
-  }
-  &.syntax--character,
-  &.syntax--other {
-    color: @orange;
+  &.syntax--character, &.syntax--other {
+    color: @syntax-color-constant;
   }
 }
 
 .syntax--variable {
-  color: @blue;
+  color: @syntax-color-variable;
+}
+
+.syntax--property {
+  color: @syntax-color-property;
 }
 
 .syntax--keyword {
-  color: @green;
+  color: @syntax-color-keyword;
 }
 
-.syntax--operator, .syntax--operator.syntax--keyword {
-  color: @magenta;
+.syntax--operator,
+.syntax--keyword.syntax--new {
+  color: @syntax-operator;
 }
 
-.syntax--storage {
-  color: @green;
+// type fixes JS let/var: move to js lang file if it causes problems
+.syntax--storage,
+.syntax--storage.syntax--type {
+  color: @syntax-color-keyword;
 }
 
-.syntax--entity {
-  &.syntax--name {
-    &.syntax--class,
-    &.syntax--type,
-    &.syntax--function {
-      color: @blue;
-    }
-  }
-  &.syntax--other.syntax--attribute-name {
-    color: @violet;
-  }
+.syntax--type,
+.syntax--class {
+  color: @syntax-color-class;
+}
+
+.syntax--function {
+  color: @syntax-color-function;
+}
+
+// ??
+.syntax--attribute-name {
+    color: @syntax-color-attribute;
 }
 
 .syntax--support {
@@ -77,7 +81,7 @@
 
 .syntax--invalid {
   &.syntax--deprecated {
-    color: @yellow;
+    color: @orange;
     text-decoration: underline;
   }
   &.syntax--illegal {
@@ -93,10 +97,8 @@
 .syntax--meta.syntax--brace,
 .syntax--bracket.syntax--round,
 .syntax--punctuation.syntax--definition,
+.syntax--punctuation.syntax--curlybrace,
+.syntax--punctuation.syntax--parenthesis,
 .syntax--punctuation.syntax--scope {
-    color: @orange;
-
-    &.syntax--string {
-        color: @cyan;
-    }
+    color: @syntax-bracket;
 }

@@ -1,6 +1,52 @@
 .syntax--gfm {
-  .syntax--link .syntax--entity {
-    color: @violet;
+  .syntax--heading {
+    color: @yellow;
+
+    &.syntax--heading-1 {
+        font-weight: bold;
+    }
+
+    .syntax--marker {
+        color: @orange;
+    }
+  }
+
+  .syntax--italic {
+      font-style: italic;
+  }
+
+  .syntax--bold {
+      font-weight: bold;
+  }
+
+  .syntax--strike {
+      text-decoration: line-through fade(@orange, 50%);
+  }
+
+  .syntax--hr {
+      color: @orange;
+  }
+
+  .syntax--link {
+    color: @magenta; // this catches image exclamation point
+
+    .syntax--entity {
+      color: @blue;
+    }
+
+    &.syntax--underline {
+        color: @cyan;
+    }
+  }
+
+  .syntax--key-value.separator {
+      color: @magenta;
+  }
+
+  .syntax--code {
+      & > .syntax--support {
+          color: @violet;
+      }
   }
 
   .syntax--list {
@@ -12,14 +58,21 @@
     }
   }
 
-  .syntax--raw {
-    font-style: italic;
+  .syntax--quote {
+      color: @syntax-text-color;
+
+      & > .syntax--support {
+          color: @orange;
+      }
   }
 
-  &.syntax--support {
-    color:@syntax-comment-color;
-    &.syntax--quote {
-      color: @violet;
-    }
+  .syntax--table {
+      .syntax--border {
+          color: @orange;
+      }
+
+      .syntax--alignment {
+          color: @green;
+      }
   }
 }

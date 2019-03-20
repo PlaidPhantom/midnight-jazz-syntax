@@ -1,0 +1,18 @@
+$variable: #123456;
+
+#id ::after {
+    color: blue;
+
+    .a-class.another:nth-child(n+1)  {
+        background: url('asdfasdf');
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body[attr="asdf"][attr2*="1234"] {
+        width: 100vh;
+        height: 10%;
+        color: $variable;
+        background-color: rgb(255, 128, 0);
+    }
+}

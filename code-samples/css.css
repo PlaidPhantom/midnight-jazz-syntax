@@ -1,0 +1,19 @@
+#id ::after {
+    color: blue;
+}
+
+.a-class.another:nth-child(n+1)  {
+    --variable: 10px;
+    background: url('asdfasdf');
+    border-radius: var(--variable);
+}
+
+@media screen and (min-width: 1000) {
+    body[attr="asdf"][attr2*="1234"] {
+        width: 100vh;
+        height: 10%;
+        color: #fefefe;
+        background-color: rgb(255, 128, 0);
+        border-width: calc(1px + 1em);
+    }
+}

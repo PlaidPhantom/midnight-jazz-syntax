@@ -1,8 +1,7 @@
-// this is a comment
-// TODO this is a todo
 /*
  a long comment
 */
+// this is a comment
 function myFunction(param, param) {
     if (a === true) {
         param.doThing(true);

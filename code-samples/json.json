@@ -1,0 +1,7 @@
+{
+    "$schema": "http://schema.org/",
+    "property": "asdfasdf",
+    "property2": 1234,
+    "array": [ 1, 2, 3, 4 ],
+    "boolean": true
+}

@@ -1,0 +1,20 @@
+// this shouldn't be needed, but it works around limits in TOML tagging
+.syntax--toml {
+    color: @syntax-bracket;
+
+    &.syntax--comment {
+        color: @syntax-comment-color;
+    }
+
+    &.syntax--table.syntax--name {
+        color: @magenta;
+    }
+
+    &.syntax--string {
+        color: @syntax-color-value;
+    }
+
+    &.syntax--key {
+        color: @syntax-text-color;
+    }
+}

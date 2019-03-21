@@ -20,4 +20,20 @@
   &.syntax--doctype {
       color: @yellow;
   }
+  &.syntax--entity:not(.syntax--tag):not(.syntax--attribute-name) {
+      color: @green;
+  }
+}
+
+.syntax--mustache {
+    &.syntax--template {
+        color: @yellow;
+
+        & > .syntax--tag {
+            color: @orange;
+        }
+    }
+    &.syntax--function {
+        color: @yellow;
+    }
 }

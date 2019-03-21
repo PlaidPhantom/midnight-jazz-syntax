@@ -1,10 +1,13 @@
-.syntax--source.syntax--go {
-
-  .syntax--operator {
-    color: @syntax-text-color;
-    &.syntax--assignment {
-      color: @green;
-    }
+.syntax--go {
+  .syntax--package.syntax--name {
+    color: @syntax-color-class;
   }
 
+  .syntax--keyword {
+    color: @syntax-color-keyword;
+  }
+
+  .syntax--operator {
+      color: @magenta;
+  }
 }

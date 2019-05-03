@@ -5,6 +5,7 @@ using System.Web.UI.WebControls;
 
 namespace HelloWorld
 {
+    [Attribute]
     public partial class Default : UI.Page
     {
         protected void Page_Load(object sender)

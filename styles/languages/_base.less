@@ -3,6 +3,7 @@
   color: @syntax-comment-color;
   font-style: italic;
 
+
   .syntax--punctuation.syntax--definition {
     color: @syntax-comment-color;
   }
@@ -20,6 +21,10 @@
   }
 
   &.syntax--regexp {
+      color: @magenta;
+  }
+
+  .syntax--embedded.syntax--punctuation {
       color: @magenta;
   }
 }

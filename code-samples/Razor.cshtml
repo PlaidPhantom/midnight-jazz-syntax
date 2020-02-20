@@ -1,0 +1,16 @@
+@using something
+
+@Model My.Class
+
+@{
+    // my code block;
+
+    var test = 1 == 2;
+}
+
+<p>@Model.SomeData</p>
+<div class="classname @ViewData["extraclass"] @(somethingelse)">
+    @if (test == true) {
+        <p>conditional paragraph</p>
+    }
+</div>

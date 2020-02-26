@@ -1,7 +1,9 @@
 .syntax--js {
     // fix let & var
-    .syntax--storage.syntax--type {
-        color: @syntax-color-keyword;
+    .syntax--storage.syntax--type, .syntax--type.syntax--function, .syntax--keyword:not(.syntax--operator) {
+        &:not(.syntax--todo) {
+            color: @syntax-color-keyword;
+        }
     }
 
     .syntax--tag {

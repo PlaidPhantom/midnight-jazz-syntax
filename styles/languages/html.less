@@ -1,39 +1,35 @@
 .syntax--html:not(.syntax--js), .syntax--xml:not(.syntax--js) {
-  &.syntax--tag {
+  &.syntax--tag, & > .syntax--tag {
     color: @blue;
   }
 
-  &.syntax--attribute-name {
+  &.syntax--attribute-name, & > .syntax--attribute-name {
       color: @violet;
   }
 
-  &.syntax--punctuation.syntax--definition {
-    color: @magenta;
-  }
-  &.syntax--string {
-    color: @cyan;
-
-    &.syntax--punctuation {
-        color: inherit;
+  &.syntax--punctuation.syntax--definition, & > .syntax--punctuation.syntax--definition {
+    &:not(.syntax--string) {
+      color: @magenta;
     }
   }
-  &.syntax--doctype {
+  &.syntax--doctype, & > .syntax--doctype {
       color: @yellow;
   }
-  &.syntax--entity:not(.syntax--tag):not(.syntax--attribute-name) {
+  &.syntax--entity:not(.syntax--tag):not(.syntax--attribute-name),
+  & > .syntax--entity:not(.syntax--tag):not(.syntax--attribute-name) {
       color: @green;
   }
-}
 
-.syntax--mustache {
-    &.syntax--template {
-        color: @yellow;
+  .syntax--mustache {
+      &.syntax--template {
+          color: @yellow;
 
-        & > .syntax--tag {
-            color: @orange;
-        }
-    }
-    &.syntax--function {
-        color: @yellow;
-    }
+          & > .syntax--tag {
+              color: @orange;
+          }
+      }
+      &.syntax--function {
+          color: @yellow;
+      }
+  }
 }
